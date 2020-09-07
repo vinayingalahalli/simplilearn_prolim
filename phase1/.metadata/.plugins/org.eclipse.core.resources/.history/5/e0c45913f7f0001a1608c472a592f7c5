@@ -1,0 +1,23 @@
+package myPack2;
+
+public class OuterInnerClass {
+
+	private class InnerPrivate {
+
+		public void helloInnerPrivateMethod() {
+			
+		}
+	}
+
+	protected class InnerProtected {
+
+	}
+
+	public class InnerPublic {
+
+	}
+
+	public static class InnerStatic {
+
+	}
+}

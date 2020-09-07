@@ -1,0 +1,5 @@
+package myPack2;
+
+public class OuterInnerClass {
+
+}

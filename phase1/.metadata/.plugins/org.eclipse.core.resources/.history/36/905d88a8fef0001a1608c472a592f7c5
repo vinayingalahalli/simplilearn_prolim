@@ -1,0 +1,8 @@
+package static_nonstatic_demo;
+
+public class DemoStaticNonStatic {
+
+	public static void main(String[] args) {
+		
+	}
+}

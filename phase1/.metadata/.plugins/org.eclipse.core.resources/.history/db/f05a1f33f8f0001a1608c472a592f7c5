@@ -1,0 +1,15 @@
+package myPack2;
+
+public class InnerClassesDemo {
+
+	public static void main(String[] args) {
+		OuterInnerClass o=new OuterInnerClass();
+		o.outerMethod();
+		
+		
+		OuterInnerClass.InnerProtected ip=o.new InnerProtected();
+		ip.helloInnerProtectedMethod();
+
+	}
+
+}

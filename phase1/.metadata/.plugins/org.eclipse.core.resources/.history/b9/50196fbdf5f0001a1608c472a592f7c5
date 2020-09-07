@@ -1,0 +1,38 @@
+package myPack;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World......");
+
+	}
+	
+	private class InnerPrivate{
+		
+	}
+	
+	protected class InnerProtected{
+		
+	}
+	
+	public class InnerPublic{
+		
+	}
+	
+	public static class InnerStatic{
+		
+	}
+
+}
+
+
+ class A{
+	
+}
+ 
+ class B{
+	 
+ }
+ class Z{
+	 
+ }

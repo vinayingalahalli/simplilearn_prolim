@@ -1,0 +1,25 @@
+package myPack2;
+
+public class OuterInnerClass {
+
+	private class InnerPrivate {
+
+		public void helloInnerPrivateMethod() {
+			System.out.println("Hello from Private innerclass's public method");
+		}
+	}
+
+	protected class InnerProtected {
+		public void helloInnerPrivateMethod() {
+			System.out.println("Hello from Private innerclass's public method");
+		}
+	}
+
+	public class InnerPublic {
+
+	}
+
+	public static class InnerStatic {
+
+	}
+}

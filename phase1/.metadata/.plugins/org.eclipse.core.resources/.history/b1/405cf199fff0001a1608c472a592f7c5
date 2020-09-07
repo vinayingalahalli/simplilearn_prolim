@@ -1,0 +1,23 @@
+package data_type_demo;
+
+public class DataTypeDemo {
+
+	public static void main(String[] args) {
+		/*
+		 * data type	size		default Value
+		 * --------------------------------------------
+		 * byte			1byte			0
+		 * short		2bytes			0
+		 * int 			4bytes			0
+		 * long			8bytes			0
+		 * 
+		 * 
+		 * float		4bytes			0.0000f
+		 * double		8bytes			0.0000d(default)
+		 * 
+		 * char			2bytes			'/u00000'(uni-code char set)
+		 * boolean      1 bit           false
+		 */
+	}
+
+}

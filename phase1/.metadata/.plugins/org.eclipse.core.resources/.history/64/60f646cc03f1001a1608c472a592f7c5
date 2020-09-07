@@ -1,0 +1,20 @@
+package static_nonstatic_demo;
+
+public class DemoStaticNonStatic {
+
+	int x; //global instance variable
+	int y;//global instance variable
+	static int z; //class level variable
+	
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public void printXYZ() {
+		System.out.println("x = "+x);
+		System.out.println("y = "+y);
+		System.out.println("z = "+z);
+	}
+}
