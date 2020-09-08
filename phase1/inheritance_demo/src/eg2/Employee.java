@@ -7,4 +7,11 @@ public class Employee extends Person{
 	private Project project;
 	private Address presentAddress;
 	private Address permanentAddress;
+	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+	public void printEmployeee() {
+		System.out.println("Printing employee");
+	}
 }
