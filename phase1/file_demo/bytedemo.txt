@@ -1,0 +1,3 @@
+hi this is new message
+hi this is new message again in new line where append is set to true
+Hi I expect this message to be written in the file

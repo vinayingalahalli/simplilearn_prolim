@@ -1,0 +1,3 @@
+heyy hii this message will be in first line
+I willl be in line 2
+while using char stream did you observe that there is no need of conversions?
