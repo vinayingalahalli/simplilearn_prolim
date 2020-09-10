@@ -571,6 +571,9 @@ Hashtable<K,V> class
    a value can be null over here.
 *it is thread safe.
 * it wont maintain the order of insertion.
+
+How Map works internally????
+https://www.youtube.com/watch?v=c3RVW3KGIIE
  
 MultiThreading
 --------------------------------------
