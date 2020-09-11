@@ -2,6 +2,7 @@ package eg2;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class DemoFlights {
@@ -52,8 +53,12 @@ public class DemoFlights {
 
 	}
 	public static void printAllFlights(List<Flight> flightList) {
-		for (int i = 0; i < flightList.size(); i++) {
-			System.out.println(flightList.get(i));
+//		for (int i = 0; i < flightList.size(); i++) {
+//			System.out.println(flightList.get(i));
+//		}
+		Iterator<Flight> i=flightList.iterator();
+		while(i.hasNext()) {
+			System.out.println(i.next());
 		}
 	}
 
