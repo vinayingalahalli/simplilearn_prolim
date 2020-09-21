@@ -1,0 +1,6 @@
+[INFO]   com.log.app.demo.HelloLog4j      Hello from INFO    21.September.20 Mon IST 14:02:13:51 PM   
+[WARN]   com.log.app.demo.HelloLog4j      Hello from WARN    21.September.20 Mon IST 14:02:13:51 PM   
+[ERROR]   com.log.app.demo.HelloLog4j      Hello from ERROR    21.September.20 Mon IST 14:02:13:51 PM   
+[FATAL]   com.log.app.demo.HelloLog4j      Hello from FATAL    21.September.20 Mon IST 14:02:13:51 PM   
+[INFO]   com.log.app.demo.Service      Inside the helloService()    21.September.20 Mon IST 14:02:13:51 PM   
+[INFO]   com.log.app.demo.Service      Executed successfully the helloService()    21.September.20 Mon IST 14:02:13:51 PM   
