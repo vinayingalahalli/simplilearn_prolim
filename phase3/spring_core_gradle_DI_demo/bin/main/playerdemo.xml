@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="a1" class="com.bean.Address">
+		<property name="aid" value="9901"></property>
+		<property name="city" value="Mumbai"></property>
+		<property name="zip" value="200006"></property>
+	</bean>
+	
+	<bean id="a2" class="com.bean.Address">
+		<property name="aid" value="9902"></property>
+		<property name="city" value="Kolkata"></property>
+		<property name="zip" value="500006"></property>
+	</bean>
+
+	<bean id="p1" class="com.bean.Player">
+		<property name="id" value="100"></property>
+		<property name="name" value="Sachin R Tendulkar"></property>
+		<property name="age" value="48"></property>
+		<property name="residence" ref="a1"></property>
+	</bean>
+
+	<bean id="p2" class="com.bean.Player">
+		<constructor-arg name="id" value="101"></constructor-arg>
+		<constructor-arg name="name" value="Saurav Ganguly"></constructor-arg>
+		<constructor-arg name="age" value="49"></constructor-arg>
+		<property name="residence" ref="a2"></property>
+	</bean>
+
+
+</beans>

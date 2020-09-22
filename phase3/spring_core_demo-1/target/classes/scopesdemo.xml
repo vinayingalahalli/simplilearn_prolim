@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="h1" class="com.bean.HelloScope"  >
+		<property name="message" value="Hello World From Spring Scopes - 1 with setter injection"></property>
+	</bean>
+	
+	<bean id="obj2" class="com.bean.HelloScope" lazy-init="true" >
+		<property name="message" value="Hello World From Spring Scopes - 2 with setter injection"></property>
+	</bean>
+	
+	<bean id="obj3" class="com.bean.HelloScope"  scope="prototype">
+		<property name="message" value="Hello From Prototype with setter injection"></property>
+	</bean>
+	
+	<bean id="obj4" class="com.bean.HelloScope"  scope="prototype">
+		<constructor-arg name="message" value="Hello From Prototype with constructor Injection"></constructor-arg>
+	</bean>
+</beans>
