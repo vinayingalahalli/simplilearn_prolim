@@ -1,11 +1,14 @@
 package com.bean;
 
+import java.util.List;
+
 public class Player {
 
 	private int id;
 	private String name;
 	private int age;
 	private Address residence;
+	private List<Team> teamsList;
 	
 	public Player() {
 		// TODO Auto-generated constructor stub
@@ -42,12 +45,6 @@ public class Player {
 		this.age = age;
 	}
 
-	
-
-	@Override
-	public String toString() {
-		return "Player [id=" + id + ", name=" + name + ", age=" + age + ", residence=" + residence + "]";
-	}
 
 	public Address getResidence() {
 		return residence;
@@ -55,6 +52,20 @@ public class Player {
 
 	public void setResidence(Address residence) {
 		this.residence = residence;
+	}
+
+	public List<Team> getTeamsList() {
+		return teamsList;
+	}
+
+	public void setTeamsList(List<Team> teamsList) {
+		this.teamsList = teamsList;
+	}
+
+	@Override
+	public String toString() {
+		return "Player [id=" + id + ", name=" + name + ", age=" + age + ", residence=" + residence + ", teamsList="
+				+ teamsList + "]";
 	}
 	
 	

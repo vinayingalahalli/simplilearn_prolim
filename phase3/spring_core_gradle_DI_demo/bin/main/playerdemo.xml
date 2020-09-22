@@ -10,11 +10,35 @@
 		<property name="city" value="Mumbai"></property>
 		<property name="zip" value="200006"></property>
 	</bean>
-	
+
 	<bean id="a2" class="com.bean.Address">
 		<property name="aid" value="9902"></property>
 		<property name="city" value="Kolkata"></property>
 		<property name="zip" value="500006"></property>
+	</bean>
+
+
+	<bean id="t1" class="com.bean.Team">
+		<property name="tid" value="42000"></property>
+		<property name="teamName" value="Mumbai Indians"></property>
+		<property name="coachName" value="Jayawardene"></property>
+	</bean>
+	
+	<bean id="t2" class="com.bean.Team">
+		<property name="tid" value="42001"></property>
+		<property name="teamName" value="India"></property>
+		<property name="coachName" value="Ravi Shastri"></property>
+	</bean>
+	
+	<bean id="t3" class="com.bean.Team">
+		<property name="tid" value="42002"></property>
+		<property name="teamName" value="Kolkata Knight Riders"></property>
+		<property name="coachName" value="Mccullum"></property>
+	</bean>
+	<bean id="t4" class="com.bean.Team">
+		<property name="tid" value="42003"></property>
+		<property name="teamName" value="Maharashtra State Association"></property>
+		<property name="coachName" value="Coach Maharashtra"></property>
 	</bean>
 
 	<bean id="p1" class="com.bean.Player">
@@ -22,6 +46,13 @@
 		<property name="name" value="Sachin R Tendulkar"></property>
 		<property name="age" value="48"></property>
 		<property name="residence" ref="a1"></property>
+		<property name="teamsList">
+		<list>
+		<ref bean="t1"/>
+		<ref bean="t2"/>
+		<ref bean="t4"/>
+		</list>
+		</property>
 	</bean>
 
 	<bean id="p2" class="com.bean.Player">
@@ -29,6 +60,12 @@
 		<constructor-arg name="name" value="Saurav Ganguly"></constructor-arg>
 		<constructor-arg name="age" value="49"></constructor-arg>
 		<property name="residence" ref="a2"></property>
+		<property name="teamsList">
+		<list>
+		<ref bean="t3"/>
+		<ref bean="t2"/>
+		</list>
+		</property>
 	</bean>
 
 
