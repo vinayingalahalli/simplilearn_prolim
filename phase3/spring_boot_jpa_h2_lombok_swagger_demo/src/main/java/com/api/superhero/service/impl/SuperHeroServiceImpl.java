@@ -1,10 +1,12 @@
 package com.api.superhero.service.impl;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.api.superhero.exceptionHandler.BusinessException;
 import com.api.superhero.model.SuperHero;
 import com.api.superhero.repository.SuperHeroRepository;
 import com.api.superhero.service.SuperHeroService;
@@ -27,8 +29,16 @@ public class SuperHeroServiceImpl implements SuperHeroService{
 	}
 
 	@Override
-	public SuperHero getSuperHeroById(int id) {
-		SuperHero superHero=repository.findById(id).get();
+	public SuperHero getSuperHeroById(int id) throws BusinessException {
+		SuperHero superHero=null;
+		try {
+			if(id<=0) {
+				throw new BusinessException("Id cannot be zero or negative");
+			}
+		superHero=repository.findById(id).get();
+		}catch(NoSuchElementException e) {
+			throw new BusinessException("No SuperHero found with id = "+id);
+		}
 		return superHero;
 	}
 
